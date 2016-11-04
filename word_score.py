@@ -35,4 +35,12 @@ def run_tests():
 
 # Edit this code
 def scorer(word):
-
+    score = 0
+    for char in word:
+        if not char in "aeiou":
+            if char in "qxyz":
+                score = score + 2
+            else:
+                score = score + 1
+    print(score)
+                

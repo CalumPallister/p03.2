@@ -30,4 +30,9 @@ def run_tests():
 
 # Edit this code
 def clue(word):
+        new = ''
+        for char in word:
+            if char != "a" and char != "e" and char != "i" and char != "o" and char != "u":
+                new = new + char
+        print(new)
 

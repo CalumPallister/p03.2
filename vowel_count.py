@@ -27,4 +27,8 @@ def run_tests():
 
 # Edit this code
 def vowels(word):
-
+    vowels = 0
+    for char in word:
+        if char == "a" or char == "e" or char == "i" or char == "o" or char == "u":
+            vowels = vowels + 1
+    print(vowels)
